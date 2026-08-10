@@ -1,6 +1,9 @@
 STM32_Embedded_Journey
+
 I am sharing repositories that belongs to STM32 learning projects.
+
 #Repo02 : STM32F407-BUTTON-POLLING
+
 WHAT DID I DO:
 I did bare-metal coding via STM32F407-DISC1 in order to button polling in STM32CubeIDE.
 CONCEPTUAL MAP:
