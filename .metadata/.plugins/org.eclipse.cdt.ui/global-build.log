@@ -1,0 +1,297 @@
+18:46:17 **** Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '}' token
+   28 | }
+      | ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+18:49:25 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '}' token
+   28 | }
+      | ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+18:51:04 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '}' token
+   28 | }
+      | ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+18:55:02 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '}' token
+   28 | }
+      | ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+18:55:41 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '}' token
+   28 | }
+      | ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+18:57:05 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '}' token
+   28 | }
+      | ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+19:01:20 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '}' token
+   28 | }
+      | ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+19:01:24 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '}' token
+   28 | }
+      | ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+19:01:33 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '}' token
+   28 | }
+      | ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+19:05:00 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:28:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '}' token
+   28 | }
+      | ^
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j20 all" terminated with exit code 2. Build might be incomplete.
+20:25:15 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "01-gpio-blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Asus\Desktop\STM32_embedded_journey\01-gpio-blink\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="01-gpio-blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 01-gpio-blink.elf
+ 
+arm-none-eabi-size  01-gpio-blink.elf 
+arm-none-eabi-objdump -h -S 01-gpio-blink.elf  > "01-gpio-blink.list"
+   text	   data	    bss	    dec	    hex	filename
+    764	      0	   1568	   2332	    91c	01-gpio-blink.elf
+Finished building: default.size.stdout
+ 
+Finished building: 01-gpio-blink.list
+ 
+20:25:59 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-size  01-gpio-blink.elf 
+   text	   data	    bss	    dec	    hex	filename
+    764	      0	   1568	   2332	    91c	01-gpio-blink.elf
+Finished building: default.size.stdout
+ 
+20:26:45 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "01-gpio-blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Asus\Desktop\STM32_embedded_journey\01-gpio-blink\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="01-gpio-blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 01-gpio-blink.elf
+ 
+arm-none-eabi-size  01-gpio-blink.elf 
+arm-none-eabi-objdump -h -S 01-gpio-blink.elf  > "01-gpio-blink.list"
+   text	   data	    bss	    dec	    hex	filename
+    760	      0	   1568	   2328	    918	01-gpio-blink.elf
+Finished building: default.size.stdout
+ 
+Finished building: 01-gpio-blink.list
+ 
+20:34:05 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "01-gpio-blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Asus\Desktop\STM32_embedded_journey\01-gpio-blink\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="01-gpio-blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 01-gpio-blink.elf
+ 
+arm-none-eabi-size  01-gpio-blink.elf 
+arm-none-eabi-objdump -h -S 01-gpio-blink.elf  > "01-gpio-blink.list"
+   text	   data	    bss	    dec	    hex	filename
+    824	      0	   1568	   2392	    958	01-gpio-blink.elf
+Finished building: default.size.stdout
+ 
+Finished building: 01-gpio-blink.list
+ 
+20:36:01 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-size  01-gpio-blink.elf 
+   text	   data	    bss	    dec	    hex	filename
+    824	      0	   1568	   2392	    958	01-gpio-blink.elf
+Finished building: default.size.stdout
+ 
+20:37:15 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-size  01-gpio-blink.elf 
+   text	   data	    bss	    dec	    hex	filename
+    824	      0	   1568	   2392	    958	01-gpio-blink.elf
+Finished building: default.size.stdout
+ 
+20:39:18 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "01-gpio-blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Asus\Desktop\STM32_embedded_journey\01-gpio-blink\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="01-gpio-blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 01-gpio-blink.elf
+ 
+arm-none-eabi-size  01-gpio-blink.elf 
+arm-none-eabi-objdump -h -S 01-gpio-blink.elf  > "01-gpio-blink.list"
+   text	   data	    bss	    dec	    hex	filename
+    828	      0	   1568	   2396	    95c	01-gpio-blink.elf
+Finished building: default.size.stdout
+ 
+Finished building: 01-gpio-blink.list
+ 
+20:43:05 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "01-gpio-blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Asus\Desktop\STM32_embedded_journey\01-gpio-blink\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="01-gpio-blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 01-gpio-blink.elf
+ 
+arm-none-eabi-size  01-gpio-blink.elf 
+arm-none-eabi-objdump -h -S 01-gpio-blink.elf  > "01-gpio-blink.list"
+   text	   data	    bss	    dec	    hex	filename
+    828	      0	   1568	   2396	    95c	01-gpio-blink.elf
+Finished building: default.size.stdout
+ 
+Finished building: 01-gpio-blink.list
+ 
+20:44:06 **** Incremental Build of configuration Debug for project 01-gpio-blink ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "01-gpio-blink.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Asus\Desktop\STM32_embedded_journey\01-gpio-blink\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="01-gpio-blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 01-gpio-blink.elf
+ 
+arm-none-eabi-size  01-gpio-blink.elf 
+arm-none-eabi-objdump -h -S 01-gpio-blink.elf  > "01-gpio-blink.list"
+   text	   data	    bss	    dec	    hex	filename
+    832	      0	   1568	   2400	    960	01-gpio-blink.elf
+Finished building: default.size.stdout
+ 
+Finished building: 01-gpio-blink.list
+ 
+16:05:01 **** Build of configuration Debug for project button_polling ****
+make -j20 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "button_polling.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Asus\Desktop\STM32_embedded_journey\button_polling\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="button_polling.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: button_polling.elf
+ 
+arm-none-eabi-size  button_polling.elf 
+arm-none-eabi-objdump -h -S button_polling.elf  > "button_polling.list"
+   text	   data	    bss	    dec	    hex	filename
+    652	      0	   1568	   2220	    8ac	button_polling.elf
+Finished building: default.size.stdout
+ 
+Finished building: button_polling.list
+ 
+16:05:24 **** Incremental Build of configuration Debug for project button_polling ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "button_polling.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Asus\Desktop\STM32_embedded_journey\button_polling\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="button_polling.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: button_polling.elf
+ 
+arm-none-eabi-size  button_polling.elf 
+arm-none-eabi-objdump -h -S button_polling.elf  > "button_polling.list"
+   text	   data	    bss	    dec	    hex	filename
+    836	      0	   1568	   2404	    964	button_polling.elf
+Finished building: default.size.stdout
+ 
+Finished building: button_polling.list
+ 
+16:14:22 **** Build of configuration Debug for project 02_button_polling ****
+make -j20 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+../Src/main.c:22:4: warning: #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use." [-Wcpp]
+   22 |   #warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use."
+      |    ^~~~~~~
+arm-none-eabi-gcc -o "02_button_polling.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Asus\Desktop\STM32_embedded_journey\02_button_polling\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="02_button_polling.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 02_button_polling.elf
+ 
+arm-none-eabi-size  02_button_polling.elf 
+arm-none-eabi-objdump -h -S 02_button_polling.elf  > "02_button_polling.list"
+   text	   data	    bss	    dec	    hex	filename
+    652	      0	   1568	   2220	    8ac	02_button_polling.elf
+Finished building: default.size.stdout
+ 
+Finished building: 02_button_polling.list
+ 
+16:14:32 **** Incremental Build of configuration Debug for project 02_button_polling ****
+make -j20 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "02_button_polling.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Asus\Desktop\STM32_embedded_journey\02_button_polling\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="02_button_polling.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 02_button_polling.elf
+ 
+arm-none-eabi-size  02_button_polling.elf 
+arm-none-eabi-objdump -h -S 02_button_polling.elf  > "02_button_polling.list"
+   text	   data	    bss	    dec	    hex	filename
+    836	      0	   1568	   2404	    964	02_button_polling.elf
+Finished building: default.size.stdout
+ 
+Finished building: 02_button_polling.list
+ 

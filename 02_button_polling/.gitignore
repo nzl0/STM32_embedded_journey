@@ -1,0 +1,32 @@
+# STM32CubeIDE build çıktıları
+**/Debug/
+**/Release/
+**/RTE/
+
+# Eclipse/CubeIDE workspace metadata (proje dışı, workspace'e özel)
+.metadata/
+.settings/
+.cproject
+.project
+.mxproject
+
+# STM32CubeMX geçici dosyalar
+**/*.ioc.bak
+
+# Derleyici çıktıları
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+*.list
+*.su
+
+# IDE / editör dosyaları
+.vscode/
+*.swp
+*~
+
+# İşletim sistemi dosyaları
+.DS_Store
+Thumbs.db
