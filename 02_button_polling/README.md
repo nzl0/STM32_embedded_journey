@@ -12,7 +12,10 @@ A button connects or keeps apart the two conductive pins each other. During pins
 
 Pull-down resistor : If button is pressed, pin is always 1. In the other hand, pin is 0. It is used in STM32F407 for user button.
 Pull-up resistor : If button is pressed, pin is always 0. In the other hand, pin is 1. 
+
 BONUS RESEARCH:
+
 Why is “uint32_t” used rather than “int” ? 
+
 Because capacity of “int” is depencied of system/platforms. Therefore, using int is unreliable. However, if uint32_ t is used this amount of capacity does not change. It is fixed in 32 bits.
 
