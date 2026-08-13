@@ -1,30 +1,35 @@
-# STM32_Embedded_Journey
-I am sharing repositories that belongs to STM32 learning projects.
+STM32_Embedded_Journey
 
-#Repo01 : STM32F407-BARE-METAL-LED-BLINK
-## WHAT DID I DO:
-I did bare-metal coding via STM32F407-DISC1 in order to LED blink in STM32CubeIDE. 
-## CONCEPTUAL MAP:
-1)	Why is clock exist ?
-Digital circuits work synchronous manner. Therefore, clock signals are needed to organize the how and when digital circuits elements work together. Firstly, (chip is reset form.) clock signals of all peripherals are closed. The reason for this, clock signals are not sent for peripherals that already does not work. Because of, clock signals should be opened manuelly before working.  
-2)	What is RCC and why is it needed ?
-RCC (Reset Clock and Control) is a peripheral and includes a lot of registers inside. It’s task is managing and keeping a list that shows which peripheral’s clock is open or not.
-3)	What is AHB1ENR ?
-AHB1ENR can be imagined like a key that open or close the peripherals which connected to AHB1 bus. For instance, if GPIOD port (etc..) is exist over AHB1 bus, AHB1ENR register should be used to open clock signal of GPIOD port.
-4)	What is MODER and ODR ?
-MODER is a register that determines the which state of GPIO ports. Each pin occupies 2 bits. Because there are 4 states : 00_input, 01_output, 10_alternate function, 11_analog and 2^2=4. ODR register represents final state of output mode of MODER. It occupies 1 bit : 0 or 1.
-## THE MISTAKES I EXPERIENCED 
-1)	warning "FPU is not initialized, but the project is compiling for an FPU. Please initialize the FPU before use.". Like GPIO peripherals, FPU comes closed manner when chip is reset defaultly. Therefore, before runtime FPU should be opened manuelly in hardware. 
-## KNOW HOW
-1)	GPIOD->MODER &= ~(3 << (13*2)); In this code, 3 is written. Because the aim is setting 2 bits and 3 means i binary format 11. 
-2)	Busy wait delay that is used code does not represent exact time. The number that belongs inside for loop, is tour for loop like 1000000. These tours signify different amount of time according to speed of clock and Mhz of processor. In addition, if interrupt realizes CPU brokes the loop to process command. Therefore, more time might be needed. Also, this is not portable. If same code is ported to other chip, time changes. Because number of repetition signifies different amount of time in different hardwares. Namely, there is no determinism in this way.
+STM32 ile yaptığım gömülü yazılım tekniklerini öğrendiğim maker projelerimi paylaşıyorum.
 
+#Repo01: STM32F407-BARE-METAL-LED-BLINK
 
-## BONUS RESEARCH
-1)	Are bare-metal coding and register-level coding same ? 
-These are not same. Bare-metal coding is code that works in hardware without operating system (RTOS, Linux etc.) directly. There are no scheduler, a Kernel or task manager. In register-level coding, it is achieved to peripherals via register addresses directly without HAL (Hardware Abstraction Layer). In HAL, built-in functions are called rather than accesing to registers directly. 
-2)	Why register level coding ?
-It is needed for maximum speed, clearness and getting control.
-3)	Why bare-metal coding ?
-It is needed to work deterministic manner directly without timing uncertainty rather than using operating system.
+NE YAPTIM:
+
+STM32CubeIDE'de LED13'ü yakıp söndürmek için STM32F407-DISC1 üzerinden bare-metal kodlama yaptım. Bu kod LED13'ü yakıp söndürüyor ve bunu sonsuz bir döngüde tekrar ediyor.
+
+KAVRAMSAL HARİTA:
+
+Clock neden var? Dijital devreler senkronize bir şekilde çalışır. Bu nedenle, dijital devre elemanlarının nasıl ve ne zaman birlikte çalışacağını düzenlemek için clock sinyallerine ihtiyaç duyulur. İlk olarak, (çip sıfırlanmış haldeyken) tüm çevre birimlerinin clock sinyalleri kapatılır. Bunun nedeni, zaten çalışmayan çevre birimlerine clock sinyali gönderilmemesidir. Bu nedenle, çalışmadan önce clock sinyallerinin manuel olarak açılması gerekir.
+RCC nedir ve neden gereklidir? RCC (Reset Clock and Control) bir çevre birimidir ve içinde birçok kayıt içerir. Görevi, hangi çevre biriminin clock sinyalinin açık olup olmadığını gösteren bir listeyi yönetmek ve tutmaktır.
+AHB1ENR nedir? AHB1ENR, AHB1 veri yoluna bağlı çevre birimlerini açan veya kapatan bir anahtar gibi düşünülebilir. Örneğin, AHB1 veri yolu üzerinde bir GPIOD portu (vb.) varsa, GPIOD portunun clock sinyalini açmak için AHB1ENR kaydı kullanılmalıdır.
+MODER ve ODR nedir? MODER, GPIO portlarının hangi durumda olduğunu belirleyen bir kayıttır. Her pin 2 bit kaplar. Çünkü 4 durum vardır: 00_giriş, 01_çıkış, 10_alternatif fonksiyon, 11_analog ve 2^2=4. ODR kaydı, MODER'in çıkış modunun son durumunu temsil eder. 1 bit kaplar: 0 veya 1.
+
+KARŞILAŞTIĞIM HATALAR
+
+"FPU başlatılmadı, ancak proje bir FPU için derleniyor. Lütfen kullanmadan önce FPU'yu başlatın." uyarısı. GPIO çevre birimleri gibi, FPU da çip sıfırlandığında varsayılan olarak kapalı bir şekilde gelir. Bu nedenle, çalışma zamanından önce FPU donanımda manuel olarak açılmalıdır.
+
+KNOW-HOW
+
+GPIOD->MODER &= ~(3 << (13*2)); Bu kodda 3 yazılmıştır. Çünkü amaç 2 biti ayarlamaktır ve 3 ikili formatta 11 anlamına gelir.
+
+Kodda kullanılan busy wait delay tam zamanı temsil etmez. For döngüsünün içindeki sayı, 1000000 gibi bir for döngüsü turudur. Bu turlar, clock hızına ve işlemcinin MHz'sine göre farklı zaman miktarlarını ifade eder. Ayrıca, kesinti gerçekleşirse CPU komutu işlemek için döngüyü kırar. Bu nedenle, daha fazla zamana ihtiyaç duyulabilir. Ayrıca, bu taşınabilir değildir. Aynı kod başka bir çipe aktarıldığında, süre değişir. Çünkü tekrar sayısı farklı donanımlarda farklı süre miktarlarını ifade eder. Yani, bu şekilde bir determinizm yoktur.
+
+EK BİLGİ
+Bare-metal kodlama ve register-level kodlama aynı mıdır? Bunlar aynı değildir. Bare-metal kodlama, işletim sistemi (RTOS, Linux vb.) olmadan doğrudan donanımda çalışan koddur. Zamanlayıcı, çekirdek veya görev yöneticisi yoktur. Register-level kodlamada, HAL (Donanım Soyutlama Katmanı) olmadan doğrudan register adresleri aracılığıyla çevre birimlerine ulaşılır. HAL'de, register'lara doğrudan erişmek yerine yerleşik fonksiyonlar çağrılır.
+
+Neden register-level kodlama? Maksimum hız, netlik ve kontrol elde etmek için gereklidir.
+
+Neden bare-metal kodlama? İşletim sistemi kullanmak yerine, zamanlama belirsizliği olmadan doğrudan deterministik bir şekilde çalışmak için gereklidir.
+
 

@@ -1,15 +1,27 @@
 STM32_Embedded_Journey
-I am sharing repositories that belongs to STM32 learning projects.
-#Repo02 : STM32F407-BUTTON-POLLING
-WHAT DID I DO:
-I did bare-metal coding via STM32F407-DISC1 in order to button polling in STM32CubeIDE.
-CONCEPTUAL MAP:
-A button connects or keeps apart the two conductive pins each other. During pins are away , they cannot determines which charge 0 or 1. Thus, they affect from electrical noise and they get randoms values. This case is called “floating pin”. The fix is using pull-up or pull-down resistors. Thanks for it, pins can have default charge.
+
+STM32 ile yaptığım gömülü yazılım tekniklerini öğrendiğim maker projelerimi paylaşıyorum.
+
+#Repo02: STM32F407-BUTTON-POLLING
+
+NE YAPTIM:
+
+STM32CubeIDE'de buton sorgulaması yapmak için STM32F407-DISC1 üzerinden bare-metal kodlama yaptım. Butona (user button) basıldığında LED12 yanıp sönüyor. Aksi takdirde LED12 çalışmıyor.
+
+KAVRAMSAL ŞEMA:
+
+Bir buton, iki iletken pini birbirine bağlar veya birbirinden ayırır. Pinler birbirinden uzak olduğunda, hangi yükün 0 veya 1 olduğunu belirleyemezler. Bu nedenle, elektriksel gürültüden etkilenirler ve rastgele değerler alırlar. Bu duruma "floating pin" denir. Çözüm, pull-up veya pull-down dirençleri kullanmaktır. Bu sayede pinler varsayılan bir yüke sahip olabilir.
+
 ![alt text](image.png)
 
-Pull-down resistor : If button is pressed, pin is always 1. In the other hand, pin is 0. It is used in STM32F407 for user button.
-Pull-up resistor : If button is pressed, pin is always 0. In the other hand, pin is 1. 
-BONUS RESEARCH:
-Why is “uint32_t” used rather than “int” ? 
-Because capacity of “int” is depencied of system/platforms. Therefore, using int is unreliable. However, if uint32_ t is used this amount of capacity does not change. It is fixed in 32 bits.
+Pull_down: Düğmeye basıldığında pin her zaman 1 olur. Diğer tarafta ise pin 0 olur. STM32F407'de kullanıcı düğmesi için kullanılır.
+
+Pull_up : Düğmeye basıldığında pin her zaman 0 olur. Diğer tarafta ise pin 1 olur.
+
+EK BİLGİ:
+
+Neden "int" yerine "uint32_t" kullanılır?
+
+Çünkü "int"in kapasitesi sistem/platforma bağlıdır. Bu nedenle, int kullanmak güvenilir değildir. Ancak, uint32_t kullanılırsa bu kapasite miktarı değişmez. 32 bit olarak sabittir.
+
 
