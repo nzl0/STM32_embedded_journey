@@ -1,10 +1,12 @@
 STM32_Embedded_Journey
+
 STM32 ile yaptığım gömülü yazılım tekniklerini öğrendiğim maker projelerimi paylaşıyorum.
 
 #Repo02: STM32F407-BUTTON-POLLING
 
 NE YAPTIM:
-STM32CubeIDE'de buton sorgulaması yapmak için STM32F407-DISC1 üzerinden bare-metal kodlama yaptım. Düğmeye (kullanıcı düğmesi) basıldığında LED12 yanıp sönüyor. Aksi takdirde LED12 çalışmıyor.
+
+STM32CubeIDE'de buton sorgulaması yapmak için STM32F407-DISC1 üzerinden bare-metal kodlama yaptım. Butona (user button) basıldığında LED12 yanıp sönüyor. Aksi takdirde LED12 çalışmıyor.
 
 KAVRAMSAL ŞEMA:
 
@@ -13,6 +15,7 @@ Bir buton, iki iletken pini birbirine bağlar veya birbirinden ayırır. Pinler 
 ![alt text](image.png)
 
 Pull_down: Düğmeye basıldığında pin her zaman 1 olur. Diğer tarafta ise pin 0 olur. STM32F407'de kullanıcı düğmesi için kullanılır.
+
 Pull_up : Düğmeye basıldığında pin her zaman 0 olur. Diğer tarafta ise pin 1 olur.
 
 EK BİLGİ:
