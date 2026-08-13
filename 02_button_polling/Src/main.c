@@ -51,6 +51,7 @@ int main(void)
 
    while(1){
 
+	   //IDR 1 (butona basılıyorsa)ise LEDi yak.
 	   if(*GPIOA_IDR & (1<<0)){
 		  *GPIOD_ODR |= (1<<12);
 	   }else{
