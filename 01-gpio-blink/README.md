@@ -3,7 +3,7 @@ I am sharing repositories that belongs to STM32 learning projects.
 
 #Repo01 : STM32F407-BARE-METAL-LED-BLINK
 ## WHAT DID I DO:
-I did bare-metal coding via STM32F407-DISC1 in order to LED blink in STM32CubeIDE. 
+I did bare-metal coding via STM32F407-DISC1 in order to LED blink in STM32CubeIDE. This code does blink for LED13. 
 ## CONCEPTUAL MAP:
 1)	Why is clock exist ?
 Digital circuits work synchronous manner. Therefore, clock signals are needed to organize the how and when digital circuits elements work together. Firstly, (chip is reset form.) clock signals of all peripherals are closed. The reason for this, clock signals are not sent for peripherals that already does not work. Because of, clock signals should be opened manuelly before working.  
