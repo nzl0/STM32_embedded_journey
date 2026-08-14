@@ -87,5 +87,5 @@ int main(void)
 	while(1){
 		//Sonsuz döngüde burada kal.
 	}
-	return 0;
+	
 }
