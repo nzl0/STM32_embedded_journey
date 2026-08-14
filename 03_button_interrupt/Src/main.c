@@ -78,11 +78,13 @@ int main(void)
 	//NVIC_ISER register'ı kesmeye CPU tarafından işlenmesine izin verilip verilmeyeceğini kontrol etmeye yarar.
 	//NVIC_ISER'in adresi Cortex-M4 programlama kılavuzundan bakılmalı, reference-manuel'den değil.
 	volatile uint32_t *NVIC_ISER0 = (volatile uint32_t*)0xE000E100;
-
+	
+	Blink_LED();
+	
 	//6 numaralı IRQ'ye (kesme talebinin ID'si) izin verildi.
 	*NVIC_ISER0 |= (1<<6);
 
-	Blink_LED();
+	
 
 	while(1){
 		//Sonsuz döngüde burada kal.
