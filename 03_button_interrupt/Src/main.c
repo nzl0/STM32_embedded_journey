@@ -82,6 +82,7 @@ int main(void)
 	//6 numaralı IRQ'ye (kesme talebinin ID'si) izin verildi.
 	*NVIC_ISER0 |= (1<<6);
 
+	Blink_LED();
 
 	while(1){
 		//Sonsuz döngüde burada kal.
