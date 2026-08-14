@@ -47,7 +47,7 @@ int main(void)
 	FPU_Enable();
 
 	//SYSCFG register'ı için APB2ENR bus'ının RCC'si pointer olarak tanımlandı.
-	volatile uint32_t *RCC_APB2ENR = (volatile uint32_t*)0x40013844;
+	volatile uint32_t *RCC_APB2ENR = (volatile uint32_t*)0x40023844;
 
 	//RCC pointerının ilgili register (SYSCFG) için 14. bitte olduğundan, ilgili bit set edildi.
 	*RCC_APB2ENR |= (1<<14);
