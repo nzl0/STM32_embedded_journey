@@ -49,7 +49,4 @@ EXTI_IMR varken NVIC_ISER0’a gerek var mı ? Aslında ikisi farklı şeyler. E
 
 NOT: Bu kodda SYSCFG_EXTICR1 register’ını açmasaydık da kodumuz çalışırdı. Çünkü zaten PA0 için register’ı 0000 yapmamız gerekiyordu. Fakat bu çalışma tesadüfen gerçekleşirdi çünkü A pini yerine başka bir pine bağlamak isteydik SYSCFG’yi 0000’dan farklı bir değer kullanmalıydık. Bu durumda da kod compiler edilirdi fakat işlevini yerine getirmez, pini yakmazdı. 
 
-BONUS RESEARCH:
-Why is “uint32_t” used rather than “int” ? 
-Because capacity of “int” is depencied of system/platforms. Therefore, using int is unreliable. However, if uint32_ t is used this amount of capacity does not change. It is fixed in 32 bits.
 
